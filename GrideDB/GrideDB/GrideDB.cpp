@@ -17,12 +17,9 @@ void GrideDB::init()
 
 //{Param} Database add
 //Adds to end of database structure.
-template<class C>
-void GrideDB::add(const C & key, const C &val)
+void GrideDB::add(str key,  str val)
 {
-	//	str keyStr = std::to_string(key);
-	//	str valStr = std::to_string(val);
-	//	dbStr.insert(keyStr, valStr);
+		dbStr.insert(key, val);
 }
 
 GrideDB::~GrideDB(void)

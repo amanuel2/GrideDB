@@ -31,8 +31,7 @@ public:
 	GrideDB(const str& db_name);
 	~GrideDB(void);
 	void init(void);
-	template<class C>
-	void add(const C & key, const C &val);
+	void add( str  key,  str val);
 private:
 	DB_INFO DB_INFO_OBJ;
 	str DB_NAME;
