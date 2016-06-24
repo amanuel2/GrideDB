@@ -2,10 +2,12 @@
 #include<string>
 
 
-void main()
+int main(void)
 {
 	GrideDB dbInit("UNIQUECODERS");
 	dbInit.init();
 
-	//dbInit.add("Key", "Val");
+	dbInit.add("AnotherOneKey", "AnotherOneVal");
+
+	return 0;
 }
